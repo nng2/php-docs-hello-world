@@ -1,0 +1,73 @@
+html {
+    background-color: blanchedalmond;
+}
+
+h1 {
+    background-color: cadetblue;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+hr {
+    margin: 16px;
+}
+
+.messages {
+    font-size: 20pt;
+    border: 3px solid black;
+    border-radius: 12px;
+    width: 1000px;
+    background-color: aliceblue;
+}
+
+.text {
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 8px;
+    margin: 4px;
+}
+
+h3 {
+    margin-right: 16px;
+}
+
+input {
+    border: 2px solid black;
+    border-radius: 12px;
+    margin: 4px 8px 4px 8px;
+}
+
+.messagebox {
+    width: 800;
+}
+
+.send {
+    width: 100px;
+}
+
+.refresh {
+    width: 100px;
+    padding: 8px;
+}
+
+form {
+    display: flex;
+    padding: 12px;
+    background-color: cornflowerblue;
+    width: 1000;
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 8px 16px 8px 16px;
+    margin: 4px;
+}
+
+.messagediv {
+    display: flex;
+    padding: 12px;
+    width: 1000px;
+    float: right;
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 8px 16px 8px 16px;
+    margin: 4px;
+}

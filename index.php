@@ -4,6 +4,7 @@
 if(isset($_COOKIE['nameChanged']) and $_COOKIE['nameChanged']==1) {
     echo '<script>alert("Name Changed!")</script>';
     setcookie('nameChanged',0);
+    unset($_COOKIE['nameChanged']);
 }
 
 $name = "";
@@ -22,7 +23,7 @@ function getMessages() {
 
     echo "
         <html>
-        <h1>Messenger " . $_COOKIE['nameChanged'] . "</h1>
+        <h1>Messenger</h1>
         <hr>
         <form class='namediv' action='/setName.php'>
             <h3>Name:</h3>

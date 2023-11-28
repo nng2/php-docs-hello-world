@@ -17,5 +17,6 @@ curl_setopt($curl, CURLOPT_POSTFIELDS, $content);
 $json_response = curl_exec($curl);
 curl_close($curl);
 
+setcookie('name', $_GET["name"]);
 header("Location: index.php");
 ?>

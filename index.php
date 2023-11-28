@@ -1,12 +1,6 @@
 <style><?php include 'CSS.css';?></style>
 <?php
 
-if(isset($_COOKIE['nameChanged']) and $_COOKIE['nameChanged']==1) {
-    echo '<script>alert("Name Changed!")</script>';
-    setcookie('nameChanged',0);
-    unset($_COOKIE['nameChanged']);
-}
-
 $name = "";
 if(isset($_COOKIE['name'])) {
     $name = $_COOKIE['name'];

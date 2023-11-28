@@ -1,5 +1,7 @@
 <style><?php include 'CSS.css';?></style>
 <?php
+$page = $_SERVER['PHP_SELF'];
+$sec = "5";
 
 $name = "";
 if(isset($_COOKIE['name'])) {
@@ -39,6 +41,8 @@ function getMessages() {
         <input class='send' type='submit' value='Send'>
         <input type='hidden' name='name' id='name' value=" . $name . ">
     </form>
-    
     </html>";
 ?>
+<html>
+<meta http-equiv="refresh" content="<?php echo $sec?>;URL='<?php echo $page?>'">
+</html>

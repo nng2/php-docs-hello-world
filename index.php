@@ -3,7 +3,7 @@
 
 if(isset($_COOKIE['nameChanged']) and $_COOKIE['nameChanged']==1) {
     echo '<script>alert("Name Changed!")</script>';
-    setcookie('nameChanged','', time()-1);
+    setcookie('nameChanged',0);
 }
 
 $name = "";

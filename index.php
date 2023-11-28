@@ -22,7 +22,7 @@ function getMessages() {
 
     echo "
         <html>
-        <h1>Messenger</h1>
+        <h1>Messenger " . $_COOKIE['nameChanged'] . "</h1>
         <hr>
         <form class='namediv' action='/setName.php'>
             <h3>Name:</h3>

@@ -13,10 +13,10 @@ hr {
 }
 
 .messages {
-    font-size: 20pt;
+    font-size: 12pt;
     border: 3px solid black;
     border-radius: 12px;
-    width: 1000px;
+    width: 75%;
     background-color: aliceblue;
 }
 
@@ -38,16 +38,11 @@ input {
 }
 
 .messagebox {
-    width: 800;
+    width: 80%;
 }
 
 .send {
     width: 100px;
-}
-
-.refresh {
-    width: 100px;
-    padding: 8px;
 }
 
 form {
@@ -57,17 +52,28 @@ form {
     width: 1000;
     border: 2px solid black;
     border-radius: 12px;
-    padding: 8px 16px 8px 16px;
+    padding: 8px;
     margin: 4px;
 }
 
 .messagediv {
     display: flex;
     padding: 12px;
-    width: 1000px;
+    width: 90%;
     float: right;
     border: 2px solid black;
     border-radius: 12px;
-    padding: 8px 16px 8px 16px;
+    padding: 8px;
+    margin: 4px;
+    margin-bottom: 32px;
+}
+
+.namediv {
+    display: flex;
+    padding: 12px;
+    width: 90%;
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 8px;
     margin: 4px;
 }

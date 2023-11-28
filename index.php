@@ -1,7 +1,7 @@
 <style><?php include 'CSS.css';?></style>
 <?php
 $page = $_SERVER['PHP_SELF'];
-$sec = "5";
+$sec = "10";
 
 $name = "";
 if(isset($_COOKIE['name'])) {
@@ -29,12 +29,20 @@ function getMessages() {
         <hr>
         <div class='messages'>
     ";
-    getMessages();
+    //getMessages();
+    echo '
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        function messages() { 
+            $("#Status").load("messages.php");
+            setTimeout(messages, 5000);
+        } 
+        setTimeout(messages, 0);
+    </script>
+    <body>
+    <div id="Status"></div>
+    </body>';
     echo "</div><hr>
-    <form class='refresh' action='/refresh.php'>
-        <input class='refresh' type='submit' value='Refresh'>
-    </form>
-    <hr>
     <form class='messagediv' action='/sendMessage.php'>
         <h3>Message:</h3>
         <input class='messagebox' type='text' id='text' name='text'>
@@ -43,6 +51,3 @@ function getMessages() {
     </form>
     </html>";
 ?>
-<html>
-<meta http-equiv="refresh" content="<?php echo $sec?>;URL='<?php echo $page?>'">
-</html>

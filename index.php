@@ -19,7 +19,7 @@ function getMessages() {
 
     echo "
         <html>
-        <h1>Messenger</h1>
+        <h1>Messenger 2</h1>
         <hr>
         <div class='namediv'>
             <h3>Name:</h3>

@@ -21,11 +21,10 @@ function getMessages() {
         <html>
         <h1>Messenger</h1>
         <hr>
-        <form class='namediv' action='/setName.php'>
+        <div class='namediv'>
             <h3>Name:</h3>
-            <input class='messagebox' type='text' id='name' name='name' value=" . $name . "><br><br>
-            <input class='send' type='submit' value='Set'>
-        </form>
+            <input class='namebox' form='messageform' type='text' id='name' name='name' value=" . $name . "><br><br>
+        </div>
         <hr>
         <div class='messages'>
     ";
@@ -43,11 +42,10 @@ function getMessages() {
     <div id="Status"></div>
     </body>';
     echo "</div><hr>
-    <form class='messagediv' action='/sendMessage.php'>
+    <form id='messageform' class='messagediv' action='/sendMessage.php'>
         <h3>Message:</h3>
         <input class='messagebox' type='text' id='text' name='text'>
         <input class='send' type='submit' value='Send'>
-        <input type='hidden' name='name' id='name' value=" . $name . ">
     </form>
     </html>";
 ?>
